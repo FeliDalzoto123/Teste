@@ -75,9 +75,7 @@
             padding: 0 24px;
         }
 
-        /* =========================
-           HEADER
-        ========================= */
+        /* HEADER */
 
         .top {
             position: sticky;
@@ -148,9 +146,7 @@
             background: var(--pri2);
         }
 
-        /* =========================
-           BUTTONS
-        ========================= */
+        /* BOTÕES */
 
         .btn {
             display: inline-block;
@@ -187,9 +183,7 @@
             color: #fff;
         }
 
-        /* =========================
-           HERO
-        ========================= */
+        /* HERO */
 
         .hero {
             background:
@@ -242,11 +236,6 @@
             backdrop-filter: blur(10px);
         }
 
-        .hero-card .icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
         .hero-card h3 {
             font-size: 1.35rem;
             margin-bottom: 8px;
@@ -263,9 +252,7 @@
             text-decoration: none;
         }
 
-        /* =========================
-           STATS
-        ========================= */
+        /* ESTATÍSTICAS */
 
         .stats {
             display: grid;
@@ -300,9 +287,7 @@
             font-size: .82rem;
         }
 
-        /* =========================
-           GENERAL
-        ========================= */
+        /* GERAL */
 
         .sec {
             padding: 76px 0;
@@ -387,13 +372,13 @@
             place-items: center;
             background: var(--soft);
             border-radius: 12px;
-            font-size: 1.45rem;
+            font-size: 1.2rem;
             margin-bottom: 18px;
+            color: var(--pri);
+            font-weight: 700;
         }
 
-        /* =========================
-           ABOUT
-        ========================= */
+        /* SOBRE */
 
         .about {
             display: grid;
@@ -451,9 +436,7 @@
             margin-right: 9px;
         }
 
-        /* =========================
-           SERVICES
-        ========================= */
+        /* SERVIÇOS */
 
         .service-card {
             position: relative;
@@ -484,9 +467,7 @@
             font-size: .9rem;
         }
 
-        /* =========================
-           PRODUCTS
-        ========================= */
+        /* PRODUTOS */
 
         .products {
             grid-template-columns: repeat(4, 1fr);
@@ -508,9 +489,7 @@
             font-size: .85rem;
         }
 
-        /* =========================
-           TEAM
-        ========================= */
+        /* EQUIPE */
 
         .team-card {
             text-align: center;
@@ -525,7 +504,8 @@
             place-items: center;
             background: var(--soft);
             border: 1px solid var(--bd);
-            font-size: 2rem;
+            color: var(--pri);
+            font-weight: 700;
         }
 
         .team-card small {
@@ -533,9 +513,7 @@
             font-weight: 700;
         }
 
-        /* =========================
-           GALLERY
-        ========================= */
+        /* GALERIA */
 
         .gallery {
             display: grid;
@@ -561,9 +539,7 @@
             grid-row: span 2;
         }
 
-        /* =========================
-           REVIEWS
-        ========================= */
+        /* AVALIAÇÕES */
 
         .big {
             display: grid;
@@ -612,9 +588,7 @@
             font-size: .9rem;
         }
 
-        /* =========================
-           TIPS
-        ========================= */
+        /* DICAS */
 
         .tip {
             padding: 24px;
@@ -633,9 +607,7 @@
             font-size: 1.2rem;
         }
 
-        /* =========================
-           FAQ
-        ========================= */
+        /* FAQ */
 
         .faq {
             max-width: 800px;
@@ -661,9 +633,7 @@
             margin: 13px 0 0;
         }
 
-        /* =========================
-           CTA
-        ========================= */
+        /* CTA */
 
         .cta {
             background:
@@ -686,9 +656,7 @@
             margin: 0 auto 24px;
         }
 
-        /* =========================
-           CONTACT
-        ========================= */
+        /* CONTATO */
 
         .contact-grid {
             display: grid;
@@ -741,14 +709,11 @@
             padding: 30px;
         }
 
-        .map-box .pin {
-            font-size: 2.5rem;
+        .map-box h3 {
             margin-bottom: 10px;
         }
 
-        /* =========================
-           FOOTER
-        ========================= */
+        /* FOOTER */
 
         footer {
             background: var(--dark);
@@ -786,9 +751,7 @@
             opacity: .7;
         }
 
-        /* =========================
-           WHATSAPP FLOAT
-        ========================= */
+        /* WHATSAPP */
 
         .whatsapp {
             position: fixed;
@@ -803,15 +766,50 @@
             background: #25d366;
             color: #fff;
             text-decoration: none;
-            font-size: 1.65rem;
+            font-size: .8rem;
+            font-weight: 800;
             box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
         }
 
-        /* =========================
-           MOBILE
-        ========================= */
+        .whatsapp:hover {
+            transform: translateY(-2px);
+        }
+
+        /* PÁGINAS */
+
+        .page {
+            display: none;
+        }
+
+        .page.on {
+            display: block;
+        }
+
+        .ph {
+            background: var(--card);
+            border-bottom: 1px solid var(--bd);
+            padding: 60px 0 48px;
+        }
+
+        .ph h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 10px;
+        }
+
+        .ph p {
+            color: var(--mut);
+            max-width: 650px;
+            margin: 0;
+        }
+
+        .note {
+            color: var(--mut);
+        }
+
+        /* MOBILE */
 
         @media(max-width:900px) {
+
             .hero-grid,
             .about,
             .contact-grid {
@@ -836,6 +834,7 @@
         }
 
         @media(max-width:680px) {
+
             .w {
                 padding: 0 18px;
             }
@@ -915,11 +914,10 @@
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+    <!-- HEADER -->
 
     <header class="top">
+
         <div class="w bar">
 
             <a class="brand" href="#inicio">
@@ -943,21 +941,22 @@
             </a>
 
         </div>
+
     </header>
 
 
     <main>
 
-        <!-- =========================
-             INÍCIO
-        ========================== -->
+        <!-- INÍCIO -->
 
         <section class="page" id="inicio">
 
             <div class="hero">
+
                 <div class="w hero-grid">
 
                     <div>
+
                         <div class="eyebrow">
                             Ponta Grossa · Paraná
                         </div>
@@ -972,6 +971,7 @@
                         </p>
 
                         <div class="hero-actions">
+
                             <a class="btn light" target="_blank" rel="noopener"
                                 href="https://wa.me/5542984410430?text=Olá!%20Gostaria%20de%20mais%20informações.">
                                 Falar no WhatsApp
@@ -980,11 +980,13 @@
                             <a class="btn o" href="#servicos">
                                 Conhecer serviços
                             </a>
+
                         </div>
+
                     </div>
 
+
                     <div class="hero-card">
-                        <div class="icon">🐾</div>
 
                         <h3>
                             Tudo para o seu pet
@@ -998,13 +1000,16 @@
                         <a href="#contato">
                             Ver informações da loja →
                         </a>
+
                     </div>
 
                 </div>
+
             </div>
 
 
             <div class="w">
+
                 <div class="stats">
 
                     <div class="stat">
@@ -1028,16 +1033,21 @@
                     </div>
 
                 </div>
+
             </div>
 
 
             <!-- DIFERENCIAIS -->
 
             <div class="sec">
+
                 <div class="w">
 
                     <div class="head center">
-                        <div class="lab">Por que escolher</div>
+
+                        <div class="lab">
+                            Por que escolher
+                        </div>
 
                         <h2>
                             Cuidado próximo em cada atendimento
@@ -1047,49 +1057,83 @@
                             Uma experiência simples para o tutor e mais cuidado
                             para quem realmente importa: seu animal.
                         </p>
+
                     </div>
+
 
                     <div class="g">
 
                         <div class="c">
-                            <div class="icon-box">❤️</div>
-                            <h3>Atendimento próximo</h3>
+
+                            <div class="icon-box">
+                                AT
+                            </div>
+
+                            <h3>
+                                Atendimento próximo
+                            </h3>
+
                             <p>
                                 Atendimento cordial para você tirar dúvidas,
                                 encontrar produtos e buscar orientações.
                             </p>
+
                         </div>
 
+
                         <div class="c">
-                            <div class="icon-box">🐕</div>
-                            <h3>Bem-estar animal</h3>
+
+                            <div class="icon-box">
+                                BE
+                            </div>
+
+                            <h3>
+                                Bem-estar animal
+                            </h3>
+
                             <p>
                                 Tudo pensado para ajudar o tutor a manter uma
                                 rotina mais saudável e confortável para o pet.
                             </p>
+
                         </div>
 
+
                         <div class="c">
-                            <div class="icon-box">📦</div>
-                            <h3>Mais praticidade</h3>
+
+                            <div class="icon-box">
+                                PR
+                            </div>
+
+                            <h3>
+                                Mais praticidade
+                            </h3>
+
                             <p>
                                 Consulte nossa equipe sobre produtos e possibilidade
                                 de entrega na sua região.
                             </p>
+
                         </div>
 
                     </div>
+
                 </div>
+
             </div>
 
 
-            <!-- RESUMO SERVIÇOS -->
+            <!-- SERVIÇOS EM DESTAQUE -->
 
             <div class="sec alt">
+
                 <div class="w">
 
                     <div class="head">
-                        <div class="lab">O que fazemos</div>
+
+                        <div class="lab">
+                            O que fazemos
+                        </div>
 
                         <h2>
                             Soluções para diferentes momentos da rotina
@@ -1098,43 +1142,67 @@
                         <p>
                             Conheça algumas das áreas atendidas pela Campos Gerais.
                         </p>
+
                     </div>
+
 
                     <div class="g">
 
                         <div class="c service-card">
+
                             <span class="num">01</span>
-                            <h3>Pet Shop</h3>
+
+                            <h3>
+                                Pet Shop
+                            </h3>
+
                             <p>
                                 Produtos para as necessidades do dia a dia do seu animal.
                             </p>
+
                         </div>
 
+
                         <div class="c service-card">
+
                             <span class="num">02</span>
-                            <h3>Clínica Veterinária</h3>
+
+                            <h3>
+                                Clínica Veterinária
+                            </h3>
+
                             <p>
                                 Atendimento e orientação para os cuidados com a saúde do pet.
                             </p>
+
                         </div>
 
+
                         <div class="c service-card">
+
                             <span class="num">03</span>
-                            <h3>Entrega</h3>
+
+                            <h3>
+                                Entrega
+                            </h3>
+
                             <p>
                                 Consulte disponibilidade, área de atendimento e condições.
                             </p>
+
                         </div>
 
                     </div>
 
                 </div>
+
             </div>
 
 
             <!-- CTA -->
 
             <div class="sec">
+
                 <div class="w">
 
                     <div class="cta">
@@ -1156,25 +1224,27 @@
                     </div>
 
                 </div>
+
             </div>
 
         </section>
 
 
-        <!-- =========================
-             SOBRE
-        ========================== -->
+        <!-- SOBRE -->
 
         <section class="page" id="sobre">
 
             <div class="sec">
+
                 <div class="w">
 
                     <div class="about">
 
                         <div class="about-box">
 
-                            <span>Campos Gerais</span>
+                            <span>
+                                Campos Gerais
+                            </span>
 
                             <h3>
                                 Um espaço pensado para facilitar o cuidado com seu pet.
@@ -1182,9 +1252,12 @@
 
                         </div>
 
+
                         <div class="about-text">
 
-                            <div class="lab">Sobre nós</div>
+                            <div class="lab">
+                                Sobre nós
+                            </div>
 
                             <h2>
                                 Pet shop e clínica veterinária em Ponta Grossa
@@ -1203,10 +1276,23 @@
                             </p>
 
                             <ul class="check-list">
-                                <li>Atendimento próximo e cordial</li>
-                                <li>Produtos para diferentes necessidades</li>
-                                <li>Orientação ao tutor</li>
-                                <li>Possibilidade de entrega</li>
+
+                                <li>
+                                    Atendimento próximo e cordial
+                                </li>
+
+                                <li>
+                                    Produtos para diferentes necessidades
+                                </li>
+
+                                <li>
+                                    Orientação ao tutor
+                                </li>
+
+                                <li>
+                                    Possibilidade de entrega
+                                </li>
+
                             </ul>
 
                         </div>
@@ -1214,66 +1300,101 @@
                     </div>
 
                 </div>
+
             </div>
 
 
             <div class="sec alt">
+
                 <div class="w">
 
                     <div class="head center">
-                        <div class="lab">Nossos valores</div>
+
+                        <div class="lab">
+                            Nossos valores
+                        </div>
 
                         <h2>
                             O que buscamos oferecer
                         </h2>
+
                     </div>
+
 
                     <div class="g">
 
                         <div class="c">
-                            <div class="icon-box">🤝</div>
-                            <h3>Confiança</h3>
+
+                            <div class="icon-box">
+                                CF
+                            </div>
+
+                            <h3>
+                                Confiança
+                            </h3>
+
                             <p>
                                 Comunicação clara e atendimento transparente
                                 para nossos clientes.
                             </p>
+
                         </div>
 
+
                         <div class="c">
-                            <div class="icon-box">💚</div>
-                            <h3>Cuidado</h3>
+
+                            <div class="icon-box">
+                                CD
+                            </div>
+
+                            <h3>
+                                Cuidado
+                            </h3>
+
                             <p>
                                 Respeito e atenção ao bem-estar dos animais.
                             </p>
+
                         </div>
 
+
                         <div class="c">
-                            <div class="icon-box">⭐</div>
-                            <h3>Qualidade</h3>
+
+                            <div class="icon-box">
+                                QL
+                            </div>
+
+                            <h3>
+                                Qualidade
+                            </h3>
+
                             <p>
                                 Busca constante por uma experiência positiva
                                 para tutores e pets.
                             </p>
+
                         </div>
 
                     </div>
 
                 </div>
+
             </div>
 
         </section>
 
 
-        <!-- =========================
-             SERVIÇOS
-        ========================== -->
+        <!-- SERVIÇOS -->
 
         <section class="page" id="servicos">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Atendimento</div>
+                    <div class="lab">
+                        Atendimento
+                    </div>
 
                     <h1>
                         Serviços
@@ -1285,9 +1406,12 @@
                     </p>
 
                 </div>
+
             </div>
 
+
             <div class="sec">
+
                 <div class="w">
 
                     <div class="g">
@@ -1296,9 +1420,13 @@
 
                             <span class="num">01</span>
 
-                            <div class="icon-box">🏪</div>
+                            <div class="icon-box">
+                                PS
+                            </div>
 
-                            <h3>Pet Shop</h3>
+                            <h3>
+                                Pet Shop
+                            </h3>
 
                             <p>
                                 Produtos voltados às necessidades do seu animal,
@@ -1319,9 +1447,13 @@
 
                             <span class="num">02</span>
 
-                            <div class="icon-box">🩺</div>
+                            <div class="icon-box">
+                                CV
+                            </div>
 
-                            <h3>Clínica Veterinária</h3>
+                            <h3>
+                                Clínica Veterinária
+                            </h3>
 
                             <p>
                                 Atendimento veterinário e orientação para
@@ -1342,9 +1474,13 @@
 
                             <span class="num">03</span>
 
-                            <div class="icon-box">📦</div>
+                            <div class="icon-box">
+                                EN
+                            </div>
 
-                            <h3>Entrega</h3>
+                            <h3>
+                                Entrega
+                            </h3>
 
                             <p>
                                 Consulte nossa equipe para verificar disponibilidade
@@ -1382,21 +1518,23 @@
                     </div>
 
                 </div>
+
             </div>
 
         </section>
 
 
-        <!-- =========================
-             PRODUTOS
-        ========================== -->
+        <!-- PRODUTOS -->
 
         <section class="page" id="produtos">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Pet Shop</div>
+                    <div class="lab">
+                        Pet Shop
+                    </div>
 
                     <h1>
                         Produtos para seu pet
@@ -1408,7 +1546,9 @@
                     </p>
 
                 </div>
+
             </div>
+
 
             <div class="sec">
 
@@ -1417,35 +1557,70 @@
                     <div class="g products">
 
                         <div class="c product">
-                            <div class="icon-box">🥣</div>
-                            <h3>Alimentação</h3>
+
+                            <div class="icon-box">
+                                AL
+                            </div>
+
+                            <h3>
+                                Alimentação
+                            </h3>
+
                             <p>
                                 Opções de alimentos e produtos para a rotina do seu animal.
                             </p>
+
                         </div>
 
+
                         <div class="c product">
-                            <div class="icon-box">🧴</div>
-                            <h3>Higiene</h3>
+
+                            <div class="icon-box">
+                                HG
+                            </div>
+
+                            <h3>
+                                Higiene
+                            </h3>
+
                             <p>
                                 Produtos para manter seu pet limpo e bem cuidado.
                             </p>
+
                         </div>
 
+
                         <div class="c product">
-                            <div class="icon-box">🎾</div>
-                            <h3>Brinquedos</h3>
+
+                            <div class="icon-box">
+                                BR
+                            </div>
+
+                            <h3>
+                                Brinquedos
+                            </h3>
+
                             <p>
                                 Opções para entretenimento e enriquecimento da rotina.
                             </p>
+
                         </div>
 
+
                         <div class="c product">
-                            <div class="icon-box">🦴</div>
-                            <h3>Acessórios</h3>
+
+                            <div class="icon-box">
+                                AC
+                            </div>
+
+                            <h3>
+                                Acessórios
+                            </h3>
+
                             <p>
                                 Itens para diferentes necessidades de cães e gatos.
                             </p>
+
                         </div>
 
                     </div>
@@ -1475,16 +1650,17 @@
         </section>
 
 
-        <!-- =========================
-             EQUIPE
-        ========================== -->
+        <!-- EQUIPE -->
 
         <section class="page" id="equipe">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Profissionais</div>
+                    <div class="lab">
+                        Profissionais
+                    </div>
 
                     <h1>
                         Nossa equipe
@@ -1495,7 +1671,9 @@
                     </p>
 
                 </div>
+
             </div>
+
 
             <div class="sec">
 
@@ -1514,33 +1692,69 @@
 
                     </div>
 
+
                     <div class="g">
 
                         <div class="c team-card">
-                            <div class="avatar">👨‍⚕️</div>
-                            <h3>Profissional veterinário</h3>
-                            <small>Medicina Veterinária</small>
+
+                            <div class="avatar">
+                                VT
+                            </div>
+
+                            <h3>
+                                Profissional veterinário
+                            </h3>
+
+                            <small>
+                                Medicina Veterinária
+                            </small>
+
                             <p style="margin-top:10px">
                                 Informações profissionais podem ser adicionadas aqui.
                             </p>
+
                         </div>
 
+
                         <div class="c team-card">
-                            <div class="avatar">👩‍⚕️</div>
-                            <h3>Profissional veterinário</h3>
-                            <small>Medicina Veterinária</small>
+
+                            <div class="avatar">
+                                VT
+                            </div>
+
+                            <h3>
+                                Profissional veterinário
+                            </h3>
+
+                            <small>
+                                Medicina Veterinária
+                            </small>
+
                             <p style="margin-top:10px">
                                 Informações profissionais podem ser adicionadas aqui.
                             </p>
+
                         </div>
 
+
                         <div class="c team-card">
-                            <div class="avatar">🐾</div>
-                            <h3>Equipe de atendimento</h3>
-                            <small>Atendimento</small>
+
+                            <div class="avatar">
+                                AT
+                            </div>
+
+                            <h3>
+                                Equipe de atendimento
+                            </h3>
+
+                            <small>
+                                Atendimento
+                            </small>
+
                             <p style="margin-top:10px">
                                 Apresentação da equipe de atendimento.
                             </p>
+
                         </div>
 
                     </div>
@@ -1552,16 +1766,17 @@
         </section>
 
 
-        <!-- =========================
-             GALERIA
-        ========================== -->
+        <!-- GALERIA -->
 
         <section class="page" id="galeria">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Conheça</div>
+                    <div class="lab">
+                        Conheça
+                    </div>
 
                     <h1>
                         Galeria
@@ -1573,7 +1788,9 @@
                     </p>
 
                 </div>
+
             </div>
+
 
             <div class="sec">
 
@@ -1603,8 +1820,9 @@
 
                     </div>
 
+
                     <p class="note"
-                        style="color:var(--mut);margin-top:18px;text-align:center;font-size:.85rem">
+                        style="margin-top:18px;text-align:center;font-size:.85rem">
                         Substitua estes espaços pelas fotos autorizadas da empresa.
                     </p>
 
@@ -1615,16 +1833,17 @@
         </section>
 
 
-        <!-- =========================
-             AVALIAÇÕES
-        ========================== -->
+        <!-- AVALIAÇÕES -->
 
         <section class="page" id="avaliacoes">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Clientes</div>
+                    <div class="lab">
+                        Clientes
+                    </div>
 
                     <h1>
                         Avaliações
@@ -1635,7 +1854,9 @@
                     </p>
 
                 </div>
+
             </div>
+
 
             <div class="sec">
 
@@ -1644,7 +1865,10 @@
                     <div class="big">
 
                         <div class="score">
-                            <b>4,9</b>
+
+                            <b>
+                                4,9
+                            </b>
 
                             <div class="stars">
                                 ★★★★★
@@ -1653,7 +1877,9 @@
                             <span>
                                 9 avaliações no Google
                             </span>
+
                         </div>
+
 
                         <div class="head" style="margin:0">
 
@@ -1679,7 +1905,9 @@
 
                         <div class="c">
 
-                            <div class="stars">★★★★★</div>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
 
                             <p class="q">
                                 Ótimo atendimento e preço acessível.
@@ -1698,7 +1926,9 @@
 
                         <div class="c">
 
-                            <div class="stars">★★★★★</div>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
 
                             <p class="q">
                                 Bom atendimento e simpatia.
@@ -1717,7 +1947,9 @@
 
                         <div class="c">
 
-                            <div class="stars">★★★★★</div>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
 
                             <p class="q">
                                 Ótimo lugar.
@@ -1735,16 +1967,6 @@
 
                     </div>
 
-
-                    <div style="text-align:center;margin-top:28px">
-
-                        <a class="btn o" target="_blank" rel="noopener"
-                            href="https://www.google.com/maps/search/?api=1&query=Av.+Melvin+Jones+157+Chapada+Ponta+Grossa+PR">
-                            Ver localização no Google
-                        </a>
-
-                    </div>
-
                 </div>
 
             </div>
@@ -1752,16 +1974,17 @@
         </section>
 
 
-        <!-- =========================
-             DICAS
-        ========================== -->
+        <!-- DICAS -->
 
         <section class="page" id="dicas">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Conteúdo</div>
+                    <div class="lab">
+                        Conteúdo
+                    </div>
 
                     <h1>
                         Dicas para tutores
@@ -1772,7 +1995,9 @@
                     </p>
 
                 </div>
+
             </div>
+
 
             <div class="sec">
 
@@ -1781,69 +2006,110 @@
                     <div class="g">
 
                         <article class="c tip">
-                            <span>Saúde</span>
+
+                            <span>
+                                Saúde
+                            </span>
+
                             <h3>
                                 Por que manter as vacinas em dia?
                             </h3>
+
                             <p>
                                 A vacinação faz parte dos cuidados preventivos
                                 e deve seguir a orientação de um médico veterinário.
                             </p>
+
                         </article>
 
+
                         <article class="c tip">
-                            <span>Alimentação</span>
+
+                            <span>
+                                Alimentação
+                            </span>
+
                             <h3>
                                 Como escolher a alimentação?
                             </h3>
+
                             <p>
                                 A escolha deve considerar espécie, idade, porte,
                                 necessidades individuais e orientação profissional.
                             </p>
+
                         </article>
 
+
                         <article class="c tip">
-                            <span>Prevenção</span>
+
+                            <span>
+                                Prevenção
+                            </span>
+
                             <h3>
                                 Cuidados contra parasitas
                             </h3>
+
                             <p>
                                 Converse com um veterinário sobre prevenção de
                                 pulgas, carrapatos e outros parasitas.
                             </p>
+
                         </article>
 
+
                         <article class="c tip">
-                            <span>Bem-estar</span>
+
+                            <span>
+                                Bem-estar
+                            </span>
+
                             <h3>
                                 A importância dos brinquedos
                             </h3>
+
                             <p>
                                 Brincadeiras adequadas ajudam a estimular o animal
                                 e tornar a rotina mais interessante.
                             </p>
+
                         </article>
 
+
                         <article class="c tip">
-                            <span>Higiene</span>
+
+                            <span>
+                                Higiene
+                            </span>
+
                             <h3>
                                 Cuidados com a higiene
                             </h3>
+
                             <p>
                                 A frequência dos cuidados deve respeitar as
                                 características e necessidades de cada animal.
                             </p>
+
                         </article>
 
+
                         <article class="c tip">
-                            <span>Veterinário</span>
+
+                            <span>
+                                Veterinário
+                            </span>
+
                             <h3>
                                 Quando procurar ajuda?
                             </h3>
+
                             <p>
                                 Alterações persistentes de comportamento, alimentação
                                 ou saúde merecem avaliação profissional.
                             </p>
+
                         </article>
 
                     </div>
@@ -1855,16 +2121,17 @@
         </section>
 
 
-        <!-- =========================
-             FAQ
-        ========================== -->
+        <!-- FAQ -->
 
         <section class="page" id="faq">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Dúvidas</div>
+                    <div class="lab">
+                        Dúvidas
+                    </div>
 
                     <h1>
                         Perguntas frequentes
@@ -1875,7 +2142,9 @@
                     </p>
 
                 </div>
+
             </div>
+
 
             <div class="sec">
 
@@ -1884,7 +2153,9 @@
                     <div class="faq">
 
                         <details>
-                            <summary>Como posso entrar em contato?</summary>
+                            <summary>
+                                Como posso entrar em contato?
+                            </summary>
 
                             <p>
                                 Você pode falar diretamente conosco pelo WhatsApp
@@ -1894,7 +2165,9 @@
 
 
                         <details>
-                            <summary>Vocês fazem entrega?</summary>
+                            <summary>
+                                Vocês fazem entrega?
+                            </summary>
 
                             <p>
                                 Sim, existe possibilidade de entrega. Consulte nossa
@@ -1904,7 +2177,9 @@
 
 
                         <details>
-                            <summary>Preciso agendar atendimento veterinário?</summary>
+                            <summary>
+                                Preciso agendar atendimento veterinário?
+                            </summary>
 
                             <p>
                                 Para saber a necessidade de agendamento e os horários
@@ -1914,7 +2189,9 @@
 
 
                         <details>
-                            <summary>Quais produtos estão disponíveis?</summary>
+                            <summary>
+                                Quais produtos estão disponíveis?
+                            </summary>
 
                             <p>
                                 A disponibilidade pode variar. Envie uma mensagem
@@ -1925,7 +2202,9 @@
 
 
                         <details>
-                            <summary>Vocês atendem cães e gatos?</summary>
+                            <summary>
+                                Vocês atendem cães e gatos?
+                            </summary>
 
                             <p>
                                 Entre em contato para confirmar os tipos de atendimento
@@ -1935,7 +2214,9 @@
 
 
                         <details>
-                            <summary>Quais são as formas de pagamento?</summary>
+                            <summary>
+                                Quais são as formas de pagamento?
+                            </summary>
 
                             <p>
                                 Consulte nossa equipe para confirmar as formas de
@@ -1952,16 +2233,17 @@
         </section>
 
 
-        <!-- =========================
-             CONTATO
-        ========================== -->
+        <!-- CONTATO -->
 
         <section class="page" id="contato">
 
             <div class="ph">
+
                 <div class="w">
 
-                    <div class="lab">Fale conosco</div>
+                    <div class="lab">
+                        Fale conosco
+                    </div>
 
                     <h1>
                         Contato
@@ -1973,6 +2255,7 @@
                     </p>
 
                 </div>
+
             </div>
 
 
@@ -1989,40 +2272,57 @@
                             </div>
 
                             <div class="row">
-                                <small>Endereço</small>
+
+                                <small>
+                                    Endereço
+                                </small>
 
                                 Av. Melvin Jones, 157<br>
                                 Chapada, Ponta Grossa - PR<br>
                                 CEP 84062-150
+
                             </div>
 
+
                             <div class="row">
-                                <small>Telefone e WhatsApp</small>
+
+                                <small>
+                                    Telefone e WhatsApp
+                                </small>
 
                                 <a href="tel:+5542984410430">
                                     (42) 98441-0430
                                 </a>
+
                             </div>
 
+
                             <div class="row">
-                                <small>Horário</small>
+
+                                <small>
+                                    Horário
+                                </small>
 
                                 Consulte os horários atualizados
                                 diretamente com nossa equipe.
+
                             </div>
 
+
                             <div class="row">
-                                <small>Localização</small>
+
+                                <small>
+                                    Localização
+                                </small>
 
                                 WQ9X+6C Chapada, Ponta Grossa - PR
+
                             </div>
 
                         </div>
 
 
                         <div class="map-box">
-
-                            <div class="pin">📍</div>
 
                             <h3>
                                 Campos Gerais
@@ -2070,9 +2370,7 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -2081,7 +2379,10 @@
             <div class="footer-grid">
 
                 <div>
-                    <b>Campos Gerais</b>
+
+                    <b>
+                        Campos Gerais
+                    </b>
 
                     <p>
                         Pet Shop e Clínica Veterinária.
@@ -2091,11 +2392,15 @@
                         Av. Melvin Jones, 157 - Chapada<br>
                         Ponta Grossa - PR
                     </p>
+
                 </div>
 
 
                 <div>
-                    <b>Navegação</b>
+
+                    <b>
+                        Navegação
+                    </b>
 
                     <p>
                         <a href="#inicio">Início</a><br>
@@ -2105,11 +2410,15 @@
                         <a href="#avaliacoes">Avaliações</a><br>
                         <a href="#faq">FAQ</a>
                     </p>
+
                 </div>
 
 
                 <div>
-                    <b>Contato</b>
+
+                    <b>
+                        Contato
+                    </b>
 
                     <p>
                         (42) 98441-0430
@@ -2128,6 +2437,7 @@
                             Ver no mapa
                         </a>
                     </p>
+
                 </div>
 
             </div>
@@ -2145,16 +2455,16 @@
 
     <!-- WHATSAPP FIXO -->
 
-    <a class="whatsapp" target="_blank" rel="noopener"
+    <a class="whatsapp"
+        target="_blank"
+        rel="noopener"
         aria-label="Falar pelo WhatsApp"
         href="https://wa.me/5542984410430?text=Olá!%20Gostaria%20de%20mais%20informações.">
-        ☎
+        WhatsApp
     </a>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+    <!-- JAVASCRIPT -->
 
     <script>
 
@@ -2234,9 +2544,7 @@
                     }
 
                     setTimeout(function () {
-
                         go();
-
                     }, 0);
 
                 }
